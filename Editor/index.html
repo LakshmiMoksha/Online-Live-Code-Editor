@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online, Live Code Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <meta name="description" content="Live code editor for HTML, CSS, and JS" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="header-wrap">
+    <h1>Online Live Code Editor</h1>
+    <h4>Write, Run and Download Code Easily</h4>
+  </div>
+
+  <div id="ide-parent">
+    <div id="button-wrapper">
+      <button onclick="switchPanel(0)">HTML</button>
+      <button onclick="switchPanel(1)">CSS</button>
+      <button onclick="switchPanel(2)">JS</button>
+      <button onclick="runEdit(3)">Result</button>
+      <button onclick="downloadCode()">Download Code (.txt)</button>
+    </div>
+
+    <div id="ide-container">
+      <div class="panel-wrapper"><div id="html"></div></div>
+      <div class="panel-wrapper"><div id="css"></div></div>
+      <div class="panel-wrapper"><div id="js"></div></div>
+      <div class="panel-wrapper"><iframe id="result"></iframe></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&#169; Made By Moksha</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
